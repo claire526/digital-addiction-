@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scroll Less, Live More</title>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --dark-green: #0A3323;
+    --moss-green: #839958;
+    --beige: #F7F4D5;
+    --rosy-brown: #D3968C;
+    --midnight-green: #105666;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--beige);
+    color: var(--dark-green);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+}
+
+    
+nav {
+    position: fixed;
+    width: 100%;
+    background: var(--dark-green);
+    padding: 20px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+nav a {
+    color: var(--beige);
+    text-decoration: none;
+    margin: 0 28px;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--rosy-brown);
+}
+
+
+section {
+    min-height: 100vh;
+    padding: 160px 12% 100px 12%;
+}
+
+h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 2.6rem;
+    margin-bottom: 40px;
+}
+
+h3 {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+    
+#intro {
+    background: linear-gradient(rgba(10,51,35,0.92), rgba(16,86,102,0.9));
+    color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro p {
+    max-width: 650px;
+    font-size: 1.1rem;
+}
+
+.btn {
+    margin-top: 35px;
+    display: inline-block;
+    padding: 15px 40px;
+    background: var(--rosy-brown);
+    color: var(--beige);
+    border-radius: 40px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--moss-green);
+}
+
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin: 30px 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-left: 6px solid var(--rosy-brown);
+}
+
+
+#description {
+    background: var(--moss-green);
+    color: var(--beige);
+}
+
+#description h2 {
+    color: var(--beige);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.grid div {
+    background: rgba(255,255,255,0.12);
+    padding: 35px;
+    border-radius: 20px;
+    border: 1px solid rgba(247,244,213,0.4);
+}
+
+
+.support-box {
+    background: var(--dark-green);
+    color: var(--beige);
+    padding: 45px;
+    margin-top: 70px;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    line-height: 2.2;
+    border: 2px solid var(--rosy-brown);
+}
+
+
+#contact {
+    background: var(--midnight-green);
+    color: var(--beige);
+}
+
+#contact h2 {
+    color: var(--beige);
+}
+
+form {
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--rosy-brown);
+    background: rgba(255,255,255,0.1);
+    color: var(--beige);
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    padding: 15px 35px;
+    border: none;
+    background: var(--rosy-brown);
+    color: var(--beige);
+    border-radius: 40px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: var(--moss-green);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: var(--dark-green);
+    color: var(--beige);
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="#intro">Intro</a>
+    <a href="#purpose">Purpose</a>
+    <a href="#description">Description</a>
+    <a href="#support">Budget</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="intro">
+    <h1>Scroll Less, Live More</h1>
+    <p>
+        The Digital Awareness Hub: Scroll Less, Live More project aims to address 
+        this issue by promoting responsible and balanced use of technology. Through 
+        awareness campaigns, digital tools, and guided activities, students will 
+        learn to manage their screen time effectively, prioritize academic tasks, and 
+        develop healthier digital habits. This project encourages students to become 
+        disciplined, productive, and responsible digital users.
+    </p>
+    <a href="#purpose" class="btn">Discover More</a>
+</section>
+
+<section id="purpose">
+    <h2>MISSION & VISION</h2>
+    
+    <div class="card">
+        <h3>PURPOSE</h3>
+        <p>In response to the growing issue of digital addiction among students, 
+            this project proposes several practical and student-centered solutions 
+            to promote healthier and more responsible digital habits. The Digital 
+            Awareness Hub will organize awareness campaigns such as seminars, school 
+            talks, and social media content to educate students about the effects of digital addiction.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>MISSION</h3>
+        <p>
+            To raise awareness among students about the effects of excessive digital 
+            usage and promote responsible technology use through educational 
+            campaigns, digital tools, and collaborative activities that support 
+            academic success and student well-being.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>VISION</h3>
+        <p>
+           A learning environment where students are aware of the impact of digital 
+           addiction and maintain a healthy balance between digital engagement 
+           and academic responsibilities. Students become disciplined, productive, 
+           and responsible digital citizens who use technology to enhance learning 
+           and personal growth.
+        </p>
+    </div>
+</section>
+
+<section id="description">
+    <h2>WHAT THE PLATFORM OFFERS</h2>
+    <h3>The Digital Awareness Addiction Hub is a school-based initiative designed to promote responsible technology use and reduce digital addiction among students. This project features an integrated digital ecosystem composed of a central educational website and a strategic social media campaign that encourages students to shift from passive consumption to active and disciplined technology use.
+</h3>
+    
+    <div class="grid">
+        <div>
+            <h3>Learning Resources</h3>
+            <p>Interactive self-assessment tools, productivity software, and ICT learning modules help students track screen habits and improve academic collaboration.
+</p>
+        </div>
+        <div>
+            <h3>Awareness Campaign</h3>
+            <p>Social media platforms deliver bite-sized content about digital addiction and promote engagement challenges that encourage healthier tech habits.</p>
+        </div>
+        <div>
+            <h3>Habit Development</h3>
+            <p>Students are encouraged to set screen limits, take breaks, and prioritize schoolwork to develop healthier routines and improve well-being.
+</p>
+        </div>
+        <div>
+            <h3>Integrated Experience</h3>
+            <p>Social media directs students to the website for deeper learning, creating a unified platform that promotes productive technology use.
+</p>
+        </div>
+    </div>
+    
+    <h2>SKILLS DEVELOPED</h2>
+    <h3>• Digital Literacy</h3>
+    <h3>• Responsible Technological Use</h3>
+    <h3>• Critical Thinking</h3>
+    <h3>• Communication</h3>
+    <h3>• Collaboration</h3>
+    <h3>• Self-Management</h3>
+    </section>
+    
+<section id="support">
+     <h2>BUDGET</h2>
+    <h3>These materials will help spread information, encourage everyone to participate, and appreciate the efforts of students who organized and supported the campaign.
+</h3>
+     
+    <div class="support-box">
+         Printing of Posters — ₱900<br>
+         Brochures — ₱500<br>
+         Flyers — ₱500<br>
+         Customized sticker/card with awareness messages — ₱200<br>
+         Certificates for volunteers — ₱200<br>
+         Candies for token of appreciation — ₱250<br>
+         Internet access and conectivity — ₱1500<br>
+         Online Platform/Software Subscription — ₱1500<br>
+         Other miscallaneous fees — ₱800<br>
+         TOTAL ESTIMATED VALUE — ₱6350
+     </div>
+</section>
+
+<section id="contact">
+    <h2>CONTACT INFORMATION</h2>
+    <h3>💌 Message Us, Make a Difference</h3>
+    <p>Name: Claire R. Manuel</p>
+    <p>Email: crmanuel0056val@student.fatima.edu.ph</p>
+    <p>Phone: +63 915 240 0353</p>
+</section>
+
+<footer>
+    © 2026 Scroll Less, Live More | All Rights Reserved
+</footer>
+
+</body>
+</html>
